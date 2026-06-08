@@ -15,6 +15,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/deepakmeena61/LeetCode/tree/main/0049-group-anagrams/) | Medium |
+| [0125-valid-palindrome](https://github.com/deepakmeena61/LeetCode/tree/main/0125-valid-palindrome/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -48,4 +49,8 @@
 | [1148-article-views-i](https://github.com/deepakmeena61/LeetCode/tree/main/1148-article-views-i/) | Easy |
 | [1683-invalid-tweets](https://github.com/deepakmeena61/LeetCode/tree/main/1683-invalid-tweets/) | Easy |
 | [1757-recyclable-and-low-fat-products](https://github.com/deepakmeena61/LeetCode/tree/main/1757-recyclable-and-low-fat-products/) | Easy |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0125-valid-palindrome](https://github.com/deepakmeena61/LeetCode/tree/main/0125-valid-palindrome/) | Easy |
 <!---LeetCode Topics End-->
