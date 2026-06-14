@@ -1,0 +1,20 @@
+/* Part 1: user who rated the most movies; tie -> smaller name */
+SELECT TOP 1 results FROM (
+    SELECT TOP 1 u.name AS results
+    FROM MovieRating mr
+    JOIN Users u ON mr.user_id = u.user_id
+    GROUP BY u.user_id, u.name
+    ORDER BY COUNT(*) DESC, u.name ASC
+) AS part1
+
+UNION ALL
+
+/* Part 2: highest avg rating in Feb 2020; tie -> smaller title */
+SELECT results FROM (
+    SELECT TOP 1 m.title AS results
+    FROM MovieRating mr
+    JOIN Movies m ON mr.movie_id = m.movie_id
+    WHERE mr.created_at >= '2020-02-01' AND mr.created_at < '2020-03-01'
+    GROUP BY m.movie_id, m.title
+    ORDER BY AVG(CAST(mr.rating AS FLOAT)) DESC, m.title ASC
+) AS part2;
